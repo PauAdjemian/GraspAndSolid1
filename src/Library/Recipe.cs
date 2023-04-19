@@ -33,6 +33,12 @@ namespace Full_GRASP_And_SOLID.Library
             }
             return total;
         }
+        /*
+        double  GetProductCost() elegí agregarlo a la clase Recipe porque tiene la información necesaria
+        para lograr obtener el costo total. Esto porque nos interesa ver los steps, con el fin de sacar
+        la información de los mismos,y esta clase es la encargada de crear y eliminar los steps. Por esta
+        razón cumple con el Expert. 
+        */
 
         public void PrintRecipe()
         {
@@ -43,6 +49,7 @@ namespace Full_GRASP_And_SOLID.Library
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
             Console.WriteLine($"Costo total ={GetProductionCost()}:");
+
         }
     }
 }
